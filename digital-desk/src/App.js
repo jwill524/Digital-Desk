@@ -17,6 +17,9 @@ firebase.initializeApp(config);
 const database = firebase.database();
 
 class App extends React.Component {
+  constructor(){
+    super();
+  }
   
   render(){
     return (

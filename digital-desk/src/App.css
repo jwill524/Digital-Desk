@@ -1,7 +1,9 @@
 .App {
   text-align: center;
-  background-image: url('./deskbackground.svg');
-  background-size: contain, no-repeat;
+  background-image: url('./desk.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .App-logo {
