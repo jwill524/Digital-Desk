@@ -26,6 +26,8 @@ body {
   height: 140px;
   width: 212px;
   background-color: red;
+  background-image: url(./vectors/noteBoard.svg);
+  background-size: contain;
   /* transform: translate(140%, 220%) */
 }
 

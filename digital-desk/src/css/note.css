@@ -1,0 +1,8 @@
+.newNote {
+    color: blue;
+    padding-top: 7px;
+    height: 50px;
+    width: 50px;
+    background-image: url('../vectors/yellowNote.svg');
+    margin: 5%;
+}
