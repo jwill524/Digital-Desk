@@ -1,20 +1,42 @@
-.App {
-  text-align: center;
-  background-image: url('./vectors/desk.svg');
-  background-size: contain;
-  background-repeat: repeat;
-  background-position: center;
+html, body {
+  width: 100%;
+  height: 100%;
 }
 
+body {
+  background-image: url('./vectors/desk.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: absolute;
+}
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* .App {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  
+} */
+
+
+.Notes {
+  position: fixed;
+  left: 20.5%;
+  top: 41%;
+  height: 140px;
+  width: 212px;
+  background-color: red;
+  /* transform: translate(140%, 220%) */
+}
+
+.Books {
+  position: fixed;
+  left: 16%;
+  top: 24%;
+  height: 60px;
+  width: 100px;
+  background-color: red;
+  /* transform: translate(140%, 220%) */
 }
 
 

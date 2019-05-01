@@ -1,6 +1,7 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
 import './App.css';
+
 // import * as firebase from 'firebase'
 
 // let config = {
@@ -17,16 +18,19 @@ import './App.css';
 // const database = firebase.database();
 
 class App extends React.Component {
+  addNote(){
+    console.log("works")
+  }
   constructor(){
     super();
+    
   }
   
   render(){
     return (
       <div className="App">
-        <header className="App-header">
-          
-        </header>
+        <div className="Books" onClick={this.addBook}>Books</div>
+        <div className="Notes" onClick={this.addNote}>Notes</div>
       </div>
     );
 }
