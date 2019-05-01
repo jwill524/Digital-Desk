@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import './App.css';
-import Note from './components/Note';
+import Note from './components/note';
+import { BrowserRouter, Route } from "react-router-dom";
+import cheese from './components/Weather-app/All-important'
+import Navigation from './components/Weather-app/nav'
 
 // import * as firebase from 'firebase'
 
@@ -54,6 +57,10 @@ class App extends React.Component {
           }
         </div>
         <div className="Calendar" onClick={this.calendar}>Calendar</div>
+        <BrowserRouter>
+        <Navigation/>
+        <Route path="/weather" component={cheese} exact  />
+        </BrowserRouter>
       </div>
     );
 }

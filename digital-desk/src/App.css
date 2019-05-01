@@ -50,5 +50,16 @@ body {
   background-color: red;
   /* transform: translate(140%, 220%) */
 }
+.thermometer {
+  position: fixed;
+  left: 85%;
+  top: 30%;
+  height: 80px;
+  width: 75px;
+  background-image: url(https://clipartion.com/wp-content/uploads/2015/11/thermometer-clipart-free-clip-art-images1.png);
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 300px;
+}
 
 
