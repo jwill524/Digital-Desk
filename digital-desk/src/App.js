@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import './App.css';
-import Note from './components/note';
+import Note from './components/Note';
 
 // import * as firebase from 'firebase'
 
@@ -22,7 +22,7 @@ class App extends React.Component {
   constructor(){
     super();
     this.state = {
-      text: []
+      notes: []
     }
   }
 
@@ -46,7 +46,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <div className="Books" onClick={this.addBook}>Books</div>
-        <div className="Notes" onClick={this.addNote}>
+        <div className="Notes" onClick={this.addNote.bind(this)}>
         {
             this.state.notes.map(note =>{
               return <Note text={note.text}></Note>
