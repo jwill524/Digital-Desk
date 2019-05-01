@@ -39,4 +39,14 @@ body {
   /* transform: translate(140%, 220%) */
 }
 
+.Calendar {
+  position: fixed;
+  left: 50.5%;
+  top: 32%;
+  height: 80px;
+  width: 75px;
+  background-color: red;
+  /* transform: translate(140%, 220%) */
+}
+
 

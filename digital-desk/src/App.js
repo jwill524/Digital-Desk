@@ -19,8 +19,15 @@ import './App.css';
 
 class App extends React.Component {
   addNote(){
-    console.log("works")
+    console.log("notes")
   }
+  addBook(){
+    console.log("books")
+  }
+  calendar(){
+    console.log("calendar")
+  }
+
   constructor(){
     super();
     
@@ -31,6 +38,7 @@ class App extends React.Component {
       <div className="App">
         <div className="Books" onClick={this.addBook}>Books</div>
         <div className="Notes" onClick={this.addNote}>Notes</div>
+        <div className="Calendar" onClick={this.calendar}>Calendar</div>
       </div>
     );
 }
