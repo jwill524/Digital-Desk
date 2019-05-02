@@ -1,8 +1,35 @@
 .newNote {
     color: blue;
     padding-top: 7px;
+    padding-left: 3px;
     height: 50px;
     width: 50px;
     background-image: url('../vectors/yellowNote.svg');
-    margin: 5%;
+    margin-top: 5%;
+    margin-bottom: -3%;
+    margin-left:7%;
+    overflow: scroll;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.growNote {
+    position: relative;
+    color: black;
+    font-size: 20%;
+    transform: scale(5);
+    z-index: 5;
+    overflow: hidden;
+}
+
+.growNote * {
+    transform: scale(0.5);
+    transform-origin: top left;
+}
+
+.shrinkNote {
+    transform: scale(1);
+    font-size: 100%;
+    z-index: 1;
 }

@@ -62,4 +62,12 @@ body {
   height: 300px;
 }
 
+.addNoteButton {
+  background-color: lightgreen;
+  position: absolute;
+  left: 23.4%;
+  top: 51.3%;
+  z-index: 1;
+}
+
 

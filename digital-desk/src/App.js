@@ -55,7 +55,7 @@ class App extends React.Component {
               return <Note text={note.text}></Note>
             })
           }
-        </div>
+        </div><span className="addNoteButton" onClick={this.addNote.bind(this)}>add note</span>
         <div className="Calendar" onClick={this.calendar}>Calendar</div>
         <BrowserRouter>
         <Navigation/>
