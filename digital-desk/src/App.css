@@ -52,14 +52,12 @@ body {
 }
 .thermometer {
   position: fixed;
-  left: 85%;
-  top: 30%;
-  height: 80px;
-  width: 75px;
+  left: 86%;
+  top: 29%;
   background-image: url(components/Weather-app/thermometer.jpg);
   background-repeat: no-repeat;
   width: 50%;
-  height: 300px;
+  height: 400px;
 }
 
 .addNoteButton {
