@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import './App.css';
-import Note from './components/note';
+import Note from './components/Note';
 import { BrowserRouter, Route } from "react-router-dom";
 import cheese from './components/Weather-app/All-important'
 import Navigation from './components/Weather-app/nav'
@@ -44,6 +44,9 @@ class App extends React.Component {
   calendar(){
     console.log("calendar")
   }
+  clock(){
+    console.log("clock")
+  }
   
   render(){
     return (
@@ -57,6 +60,7 @@ class App extends React.Component {
           }
         </div><span className="addNoteButton" onClick={this.addNote.bind(this)}>add note</span>
         <div className="Calendar" onClick={this.calendar}>Calendar</div>
+        <div className="Clock" onClick={this.clock}>Clock</div>
         <BrowserRouter>
         <Navigation/>
         <Route path="/weather" component={cheese} exact  />
