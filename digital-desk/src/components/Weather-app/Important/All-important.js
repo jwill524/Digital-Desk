@@ -1,7 +1,10 @@
 import React from 'react';
-import Titles from './Titles'
-import Form from './Form'
-import Weather from './weather'
+import Titles from '../Titles'
+import Form from '../Form'
+import Weather from '../weather'
+import { NavLink } from 'react-router-dom';
+
+
 
 const Api_Key = "5fd161b3f496de85852792f81ca1cdf0"
 
@@ -14,6 +17,7 @@ class cheese extends React.Component {
     description: undefined,
     error: undefined
   }
+  
   getWeather = async (e) => {
     e.preventDefault();
 
@@ -43,7 +47,9 @@ class cheese extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="pie">
+    {/* I had to add a navlink so it would register on the main background */}
+      <NavLink to="/">Home</NavLink>
         <Titles />
         <Form getWeather={this.getWeather} />
         <Weather 

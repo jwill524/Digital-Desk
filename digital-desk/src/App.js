@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import './App.css';
-import Note from './components/Note';
-import { BrowserRouter, Route } from "react-router-dom";
-import cheese from './components/Weather-app/All-important'
-import Navigation from './components/Weather-app/nav'
+import Note from './components/note';
+import { NavLink } from 'react-router-dom';
+
 
 // import * as firebase from 'firebase'
 
@@ -50,7 +49,7 @@ class App extends React.Component {
   
   render(){
     return (
-      <div className="App">
+      <div className="Ham">
         <div className="Books" onClick={this.addBook}>Books</div>
         <div className="Notes" onClick={this.addNote.bind(this)}>
         {
@@ -61,10 +60,8 @@ class App extends React.Component {
         </div><span className="addNoteButton" onClick={this.addNote.bind(this)}>add note</span>
         <div className="Calendar" onClick={this.calendar}>Calendar</div>
         <div className="Clock" onClick={this.clock}>Clock</div>
-        <BrowserRouter>
-        <Navigation/>
-        <Route path="/weather" component={cheese} exact  />
-        </BrowserRouter>
+        {/* I had to add a navlink so it would register on the main background */}
+        <NavLink to="/weather"><div className="thermometer"></div></NavLink>
       </div>
     );
 }
