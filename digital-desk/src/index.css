@@ -21,6 +21,7 @@ code {
 }
 
 .pie{
-  background-color: white;
-  position: fixed; top: 0; left: 0; right: 0; bottom: 0; min-width: 100%; min-height: 100%; 
+  background: url(./components/Weather-app/Four-season-tree.jpg) no-repeat;
+  background-size: cover;
+   position: fixed; top: 0; left: 0; right: 0; bottom: 0; 
 }
