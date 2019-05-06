@@ -58,9 +58,9 @@ class App extends React.Component {
             })
           }
         </div><span className="addNoteButton" onClick={this.addNote.bind(this)}>add note</span>
+        <div className="Calendar" onClick={this.calendar}>Calendar</div>
         <div className="Clock" onClick={this.clock}>Clock</div>
         {/* I had to add a navlink so it would register on the main background */}
-        <NavLink to="/calendar"><div className="Calendar"></div></NavLink>
         <NavLink to="/weather"><div className="thermometer"></div></NavLink>
       </div>
     );
