@@ -4,9 +4,7 @@ import Navigation from '../nav';
 import './home.css'
 import App from '../../../App'
 import cheese from '../Important/All-important';
-
-
-
+import EventScheduler from '../../../EventScheduler/EventScheduler'
 
 
 class Home extends React.Component {
@@ -14,10 +12,12 @@ class Home extends React.Component {
   render() {
     return (
       <BrowserRouter>
-      <Navigation/>
-      <Route path="/" component={App} />
-      <Route path="/weather" component={cheese} />
-      </BrowserRouter>
+          <Navigation/>
+          <Route path="/" component={App} />
+          <Route path="/weather" component={cheese} />
+          <Route path="/calendar" component={EventScheduler}/>
+          
+       </BrowserRouter>
     )
   }
 }

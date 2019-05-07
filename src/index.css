@@ -1,3 +1,6 @@
+html{
+  min-height:100%;
+}
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +9,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-position: bottom;
+  background-size: 100%;
+  background: url(/img/charlotte-skyline.png)no repeat;
+  background-color: #95e8f3;
+  min-height: 100%;
+
 }
 
 code {
@@ -25,3 +34,27 @@ code {
   background-size: cover;
    position: fixed; top: 0; left: 0; right: 0; bottom: 0; 
 }
+
+.pies{
+  background-color: aquamarine;
+  background-size: cover;
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+}
+
+form{
+  padding: 20px;
+  margin-top: 60px;
+}
+
+form button, form h5{
+  margin: 20px 0px;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]){
+  border-color: #5140ec;
+  box-shadow: none;
+}
+
