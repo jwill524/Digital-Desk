@@ -1,18 +1,20 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import SignedInLinks from './SignedInLinks'
-import SignedOutLinks from './SignedOutLinks'
+import React from "react";
+import { Link } from "react-router-dom";
+import SignedInLinks from "./SignedInLinks";
+import SignedOutLinks from "./SignedOutLinks";
 
 const Navbar = () => {
-    return (
-        <nav className='nav-wrapper.indigo darken-4'>
-            <div className='container'>
-                <Link to='/' className='brand-logo'>Event Scheduler</Link>
-                <SignedInLinks/>
-                <SignedOutLinks/>
-            </div>
-        </nav>   
-    )
-}
+  return (
+    <nav className='nav-wrapper indigo darken-4'>
+      <div className='container'>
+        <Link to='/' className='brand-logo'>
+          Event Scheduler
+        </Link>
+        <SignedInLinks />
+        <SignedOutLinks />
+      </div>
+    </nav>
+  );
+};
 
-export default Navbar
+export default Navbar;

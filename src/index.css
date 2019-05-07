@@ -1,5 +1,5 @@
-html{
-  min-height:100%;
+html {
+  min-height: 100%;
 }
 body {
   margin: 0;
@@ -11,50 +11,61 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-position: bottom;
   background-size: 100%;
-  background: url(/img/charlotte-skyline.png)no repeat;
+  background: url(/img/charlotte-skyline.png) no repeat;
   background-color: #95e8f3;
   min-height: 100%;
-
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-.Ham{
-  background: url(./vectors/desk.svg) no-repeat;
-  background-size: cover;
-  position: fixed; top: 0; left: 0; right: 0; bottom: 0; min-width: 100%; min-height: 100%; 
-  
-}
-
-.pie{
-  background: url(./components/Weather-app/Four-season-tree.jpg) no-repeat;
-  background-size: cover;
-   position: fixed; top: 0; left: 0; right: 0; bottom: 0; 
-}
-
-.pies{
-  background-color: aquamarine;
-  background-size: cover;
-  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-}
-
-form{
+form {
   padding: 20px;
   margin-top: 60px;
 }
-
-form button, form h5{
+form button,
+form h5 {
   margin: 20px 0px;
 }
 
-input[type=text]:not(.browser-default):focus:not([readonly]),
-input[type=email]:not(.browser-default):focus:not([readonly]),
-input[type=password]:not(.browser-default):focus:not([readonly]),
-textarea.materialize-textarea:focus:not([readonly]){
+.Ham {
+  background: url(./vectors/desk.svg) no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.pie {
+  background: url(./components/Weather-app/Four-season-tree.jpg) no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.pies {
+  background-color: white;
+  background-size: 100%;
+  background-image: url(/img/charlotte-feature-image.jpg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+input[type="text"]:not(.browser-default):focus:not([readonly]),
+input[type="email"]:not(.browser-default):focus:not([readonly]),
+input[type="password"]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
   border-color: #5140ec;
   box-shadow: none;
 }
-
