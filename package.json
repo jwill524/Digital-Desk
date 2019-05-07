@@ -5,6 +5,7 @@
   "dependencies": {
     "firebase": "^5.10.1",
     "react": "^16.8.6",
+    "react-calendar": "^2.18.1",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.0"
@@ -29,5 +30,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "object-assign": "^4.1.1"
   }
 }
