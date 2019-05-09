@@ -36,13 +36,13 @@ class Base extends React.Component {
     writeData = e => {
         e.preventDefault();
         const ratingValue = e.target.elements.inputRating.value;
-        fireBase.ref('rating/').set(ratingValue);
+        fireBase.ref('rating/').push(ratingValue);
     }
 
     render() {
         return (
             <div className='base-home'>
-            <NavLink to='/' style={{color:"black"}}>Home</NavLink>
+            <NavLink to='/' style={{color:"black", fontSize:"20px"}} >Home</NavLink>
                 <form onSubmit={this.writeData.bind(this)}>
                         <h1>Rate from 0-10</h1>
                     <input type="text" name="inputRating" placeholder="Ex. 5 stars" />
