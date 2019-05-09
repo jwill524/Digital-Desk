@@ -41,6 +41,18 @@ form h5 {
   min-height: 100%;
 }
 
+.base-home{
+  background-image: url(/img/charlotte-feature-image.jpg);
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 .pie {
   background: url(./components/Weather-app/Four-season-tree.jpg) no-repeat;
   background-size: cover;

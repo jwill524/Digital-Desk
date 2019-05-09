@@ -49,7 +49,7 @@ class cheese extends React.Component {
     return (
       <div className="pie">
     {/* I had to add a navlink so it would register on the main background */}
-      <NavLink to="/">Home</NavLink>
+      <NavLink to="/" style={{color:"black", fontSize:"20px"}}>Home</NavLink>
         <Titles />
         <Form getWeather={this.getWeather} />
         <Weather 
